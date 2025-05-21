@@ -67,6 +67,7 @@ const Livros = () => {
       <table className="livro-table">
         <thead>
           <tr>
+            <th>Id</th>
             <th>Autor</th>
             <th>Isbn</th>
             <th>Quantidade Disponivel</th>
@@ -77,6 +78,7 @@ const Livros = () => {
         <tbody>
           {livros.map(livro => (
             <tr key={livro.id}>
+              <td>{livro.id}</td>
               <td>{livro.autor}</td>
               <td>{livro.isbn}</td>
               <td>{livro.quantidadeDisponivel}</td>

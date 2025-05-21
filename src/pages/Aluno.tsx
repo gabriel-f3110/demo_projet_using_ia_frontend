@@ -57,6 +57,7 @@ const Alunos = () => {
       <table className="aluno-table">
         <thead>
           <tr>
+            <th>Id</th>
             <th>Nome</th>
             <th>Matrícula</th>
             <th>Ações</th>
@@ -65,6 +66,7 @@ const Alunos = () => {
         <tbody>
           {alunos.map(aluno => (
             <tr key={aluno.id}>
+              <td>{aluno.id}</td>
               <td>{aluno.nome}</td>
               <td>{aluno.matricula}</td>
               <td>
